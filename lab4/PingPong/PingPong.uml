@@ -44,7 +44,7 @@
             <trigger xmi:type="uml:Trigger" xmi:id="_mlKucAuDEeahKpDUmM4QfQ" name="onPong" event="_lhq4UACGEeaR0aa73_n8mg" port="_nRVKgAt7EeahKpDUmM4QfQ"/>
           </transition>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_-zVxYAt9EeahKpDUmM4QfQ" name="Initial1"/>
-          <subvertex xmi:type="uml:State" xmi:id="_JtRIUAt-EeahKpDUmM4QfQ" name="Playing">
+          <subvertex xmi:type="uml:State" xmi:id="_JtRIUAt-EeahKpDUmM4QfQ" name="Playing" visibility="package">
             <entry xmi:type="uml:OpaqueBehavior" xmi:id="_xM00MAuEEeahKpDUmM4QfQ" name="sendPing">
               <language>C++</language>
               <body> if ( pinger.ping().send() ) {&#xD;
