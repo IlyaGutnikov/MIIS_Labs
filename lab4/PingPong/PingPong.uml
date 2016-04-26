@@ -3,7 +3,7 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_4IlbAACEEeaRB-LfjKLnoA">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_ObjjQACEEeaRB-LfjKLnoA" name="Protocol1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_ObjjQACEEeaRB-LfjKLnoA" name="Protocol PingPong">
     <packagedElement xmi:type="uml:Collaboration" xmi:id="_OZBzsACEEeaRB-LfjKLnoA" name="PingPong">
       <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Ob46cACEEeaRB-LfjKLnoA" client="_OZBzsACEEeaRB-LfjKLnoA" supplier="_Obyz0ACEEeaRB-LfjKLnoA" contract="_Obyz0ACEEeaRB-LfjKLnoA">
         <name xsi:nil="true"/>
@@ -61,15 +61,15 @@
     </ownedBehavior>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZS1EQACDEeaRB-LfjKLnoA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZS2SYACDEeaRB-LfjKLnoA" source="PapyrusVersion">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZS2SYQCDEeaRB-LfjKLnoA" key="Version" value="0.0.11"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZS2SYgCDEeaRB-LfjKLnoA" key="Comment" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZS2SYwCDEeaRB-LfjKLnoA" key="Copyright" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZS2SZACDEeaRB-LfjKLnoA" key="Date" value="2015-12-10"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZS2SZQCDEeaRB-LfjKLnoA" key="Author" value=""/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q1GzQAt7EeaW5Y9P17xv3g" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQQt7EeaW5Y9P17xv3g" key="Version" value="0.0.7"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQgt7EeaW5Y9P17xv3g" key="Comment" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQwt7EeaW5Y9P17xv3g" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzRAt7EeaW5Y9P17xv3g" key="Date" value="2015-09-11"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzRQt7EeaW5Y9P17xv3g" key="Author" value=""/>
     </eAnnotations>
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZS1rUACDEeaRB-LfjKLnoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_u3BoQJ9ZEeWtHskdthI1Bg"/>
+      <references xmi:type="ecore:EPackage" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_xXe8YFiYEeWkUszwrjRJag"/>
     </eAnnotations>
     <appliedProfile xmi:type="uml:Profile" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_vl5LALs8EeSTjNEQkASznQ"/>
   </profileApplication>

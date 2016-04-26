@@ -133,7 +133,7 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_azSisQCJEeaRB-LfjKLnoA"/>
       <element xmi:type="uml:Transition" href="PingPong.uml#_azG8gACJEeaRB-LfjKLnoA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_azSisgCJEeaRB-LfjKLnoA" points="[145, -21, 179, 46]$[139, 20, 173, 87]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_azSisgCJEeaRB-LfjKLnoA" points="[0, 0, 90, -45]$[62, 0, 152, -45]$[62, 107, 152, 62]$[-90, 107, 0, 62]$[-90, 45, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_azxq4ACJEeaRB-LfjKLnoA" id="(1.0,0.5)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_azxq4QCJEeaRB-LfjKLnoA" id="(0.5,1.0)"/>
     </edges>
