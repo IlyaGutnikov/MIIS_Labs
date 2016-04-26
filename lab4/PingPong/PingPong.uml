@@ -1,94 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KpKsMACDEeaRB-LfjKLnoA" name="PingPong">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_4IlbAACEEeaRB-LfjKLnoA">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_ObjjQACEEeaRB-LfjKLnoA" name="Protocol PingPong">
-    <packagedElement xmi:type="uml:Collaboration" xmi:id="_OZBzsACEEeaRB-LfjKLnoA" name="PingPong">
-      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Ob46cACEEeaRB-LfjKLnoA" client="_OZBzsACEEeaRB-LfjKLnoA" supplier="_Obyz0ACEEeaRB-LfjKLnoA" contract="_Obyz0ACEEeaRB-LfjKLnoA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RTCppProperties="http:///schemas/RTCppProperties/_xXduQFiYEeWkUszwrjRJag/6" xmlns:UMLRealTime="http://www.eclipse.org/papyrus/umlrt" xmlns:UMLRealTimeStateMach="http://www.eclipse.org/papyrus/umlrt/statemachine" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/RTCppProperties/_xXduQFiYEeWkUszwrjRJag/6 pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_xXe8YFiYEeWkUszwrjRJag">
+  <uml:Model xmi:id="_KpKsMACDEeaRB-LfjKLnoA" name="PingPong">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_4IlbAACEEeaRB-LfjKLnoA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9SDPsAt7EeaW5Y9P17xv3g" name="Pinger" classifierBehavior="_RhpDkAt-EeaW5Y9P17xv3g" isActive="true">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_uPdIUAt9EeaW5Y9P17xv3g" name="pinger" visibility="public" type="_gYLr8At8EeaW5Y9P17xv3g" aggregation="composite" isBehavior="true"/>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_RhpDkAt-EeaW5Y9P17xv3g" name="Pinger">
+        <region xmi:type="uml:Region" xmi:id="_T3aoIAt-EeaW5Y9P17xv3g" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_5napoAt-EeaW5Y9P17xv3g" name="initial" source="_sRrXkAt-EeaW5Y9P17xv3g" target="_tqBqkAt-EeaW5Y9P17xv3g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_NZBL4At_EeaW5Y9P17xv3g" name="onPong" visibility="package" source="_tqBqkAt-EeaW5Y9P17xv3g" target="_tqBqkAt-EeaW5Y9P17xv3g">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_umuRcAuAEeaW5Y9P17xv3g" name="logTransition">
+              <language>C++</language>
+              <body>std::cout&lt;&lt;&quot;onPong ransition taken&quot; &lt;&lt; std&lt;&lt;endl; </body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_HZVE4AuAEeaW5Y9P17xv3g" name="onPong" event="_qRDOgAt8EeaW5Y9P17xv3g" port="_uPdIUAt9EeaW5Y9P17xv3g"/>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_sRrXkAt-EeaW5Y9P17xv3g" name="Initial1"/>
+          <subvertex xmi:type="uml:State" xmi:id="_tqBqkAt-EeaW5Y9P17xv3g" name="Playing"/>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_gYQkcAt8EeaW5Y9P17xv3g">
+      <name xsi:nil="true"/>
+      <packagedElement xmi:type="uml:Collaboration" xmi:id="_gYLr8At8EeaW5Y9P17xv3g" name="PingPong">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_gYZuYAt8EeaW5Y9P17xv3g" client="_gYLr8At8EeaW5Y9P17xv3g" supplier="_gYVc8At8EeaW5Y9P17xv3g" contract="_gYVc8At8EeaW5Y9P17xv3g">
+          <name xsi:nil="true"/>
+        </interfaceRealization>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_gYjfYAt8EeaW5Y9P17xv3g" client="_gYLr8At8EeaW5Y9P17xv3g" supplier="_gYf1AAt8EeaW5Y9P17xv3g" contract="_gYf1AAt8EeaW5Y9P17xv3g">
+          <name xsi:nil="true"/>
+        </interfaceRealization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_gYVc8At8EeaW5Y9P17xv3g">
         <name xsi:nil="true"/>
-      </interfaceRealization>
-      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_OcFuwACEEeaRB-LfjKLnoA" client="_OZBzsACEEeaRB-LfjKLnoA" supplier="_OcBdUACEEeaRB-LfjKLnoA" contract="_OcBdUACEEeaRB-LfjKLnoA">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_qRAyQAt8EeaW5Y9P17xv3g" name="pong"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_gYbjkAt8EeaW5Y9P17xv3g">
         <name xsi:nil="true"/>
-      </interfaceRealization>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_lQ8xsAt8EeaW5Y9P17xv3g" name="ping"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_gYem4At8EeaW5Y9P17xv3g" client="_gYLr8At8EeaW5Y9P17xv3g" supplier="_gYbjkAt8EeaW5Y9P17xv3g">
+        <name xsi:nil="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_gYfN8At8EeaW5Y9P17xv3g" name="*"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_gYf1AAt8EeaW5Y9P17xv3g">
+        <name xsi:nil="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_gYktgAt8EeaW5Y9P17xv3g" client="_gYLr8At8EeaW5Y9P17xv3g" supplier="_gYf1AAt8EeaW5Y9P17xv3g">
+        <name xsi:nil="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_lRC4UAt8EeaW5Y9P17xv3g" operation="_lQ8xsAt8EeaW5Y9P17xv3g">
+        <name xsi:nil="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_qRDOgAt8EeaW5Y9P17xv3g" operation="_qRAyQAt8EeaW5Y9P17xv3g">
+        <name xsi:nil="true"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_Obyz0ACEEeaRB-LfjKLnoA" name="Protocol1">
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_vmfeIACEEeaRB-LfjKLnoA" name="pong"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_Ob7WsACEEeaRB-LfjKLnoA" name="Protocol1~">
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_lUfp4ACEEeaRB-LfjKLnoA" name="ping"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_Ob_oIACEEeaRB-LfjKLnoA" client="_OZBzsACEEeaRB-LfjKLnoA" supplier="_Ob7WsACEEeaRB-LfjKLnoA">
-      <name xsi:nil="true"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_OcAPMACEEeaRB-LfjKLnoA" name="*"/>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_OcBdUACEEeaRB-LfjKLnoA" name="Protocol1IO"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_OcGV0ACEEeaRB-LfjKLnoA" client="_OZBzsACEEeaRB-LfjKLnoA" supplier="_OcBdUACEEeaRB-LfjKLnoA">
-      <name xsi:nil="true"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:CallEvent" xmi:id="_lUitMACEEeaRB-LfjKLnoA" operation="_lUfp4ACEEeaRB-LfjKLnoA">
-      <name xsi:nil="true"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:CallEvent" xmi:id="_vmgsQACEEeaRB-LfjKLnoA" operation="_vmfeIACEEeaRB-LfjKLnoA">
-      <name xsi:nil="true"/>
-    </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_9FXeEACEEeaRB-LfjKLnoA" name="Pinger" classifierBehavior="_xqnxsACHEeaRB-LfjKLnoA" isActive="true">
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_XjsXAACFEeaRB-LfjKLnoA" name="pinger" visibility="public" type="_OZBzsACEEeaRB-LfjKLnoA" isOrdered="true" aggregation="composite" isBehavior="true"/>
-    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_xqnxsACHEeaRB-LfjKLnoA" name="Pinger">
-      <region xmi:type="uml:Region" xmi:id="_zJSvIACHEeaRB-LfjKLnoA" name="Region1">
-        <transition xmi:type="uml:Transition" xmi:id="_Rq5a0ACJEeaRB-LfjKLnoA" source="_fezsEACIEeaRB-LfjKLnoA" target="_hCS4EACIEeaRB-LfjKLnoA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_azG8gACJEeaRB-LfjKLnoA" name="onPong" source="_hCS4EACIEeaRB-LfjKLnoA" target="_hCS4EACIEeaRB-LfjKLnoA">
-          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_E1mG4ACKEeaRB-LfjKLnoA" name="logTransition">
-            <language>C++</language>
-            <body>std::cout&lt;&lt;&quot;onPongTransition taken!&quot;&lt;&lt;std::endl;</body>
-          </effect>
-          <trigger xmi:type="uml:Trigger" xmi:id="_o__5AACJEeaRB-LfjKLnoA" name="onPong" event="_vmgsQACEEeaRB-LfjKLnoA" port="_XjsXAACFEeaRB-LfjKLnoA"/>
-        </transition>
-        <subvertex xmi:type="uml:Pseudostate" xmi:id="_fezsEACIEeaRB-LfjKLnoA" name="Initial1"/>
-        <subvertex xmi:type="uml:State" xmi:id="_hCS4EACIEeaRB-LfjKLnoA" name="Playing">
-          <deferrableTrigger xmi:type="uml:Trigger" xmi:id="_ZFsjAACKEeaRB-LfjKLnoA" name="Playing" port="_XjsXAACFEeaRB-LfjKLnoA"/>
-          <entry xmi:type="uml:OpaqueBehavior" xmi:id="_Bzo8UACLEeaRB-LfjKLnoA" name="sendPing">
-            <language>C++</language>
-            <body>if (pinger.ping().send() ) {
-	std::cout&lt;&lt;&quot;Ping Sent&quot;&lt;&lt;std::endl;
-} else {
-	std::cout&lt;&lt;&quot;Error Sending Ping&quot;&lt;&lt;std::endl;
-}</body>
-          </entry>
-        </subvertex>
-      </region>
-    </ownedBehavior>
-  </packagedElement>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZS1EQACDEeaRB-LfjKLnoA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q1GzQAt7EeaW5Y9P17xv3g" source="PapyrusVersion">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQQt7EeaW5Y9P17xv3g" key="Version" value="0.0.7"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQgt7EeaW5Y9P17xv3g" key="Comment" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQwt7EeaW5Y9P17xv3g" key="Copyright" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzRAt7EeaW5Y9P17xv3g" key="Date" value="2015-09-11"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzRQt7EeaW5Y9P17xv3g" key="Author" value=""/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZS1rUACDEeaRB-LfjKLnoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_xXe8YFiYEeWkUszwrjRJag"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_vl5LALs8EeSTjNEQkASznQ"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZS58wACDEeaRB-LfjKLnoA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZS6j0ACDEeaRB-LfjKLnoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/statemachine#/"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/UMLRealTimeSM-addendum.profile.uml#_KLcn0FDtEeOA4ecmvfqvaw"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_b4oo4ACDEeaRB-LfjKLnoA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_b4p3AACDEeaRB-LfjKLnoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt#/"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/uml-rt.profile.uml#_1h74oEeVEeO0lv5O1DTHOQ"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nNSjEAo-Eeas0dogMOsZ0w">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nNTKIAo-Eeas0dogMOsZ0w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_TZ_nULU5EduiKqCzJMWbGw"/>
-  </profileApplication>
-</uml:Model>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZS1EQACDEeaRB-LfjKLnoA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q1GzQAt7EeaW5Y9P17xv3g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQQt7EeaW5Y9P17xv3g" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQgt7EeaW5Y9P17xv3g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzQwt7EeaW5Y9P17xv3g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzRAt7EeaW5Y9P17xv3g" key="Date" value="2015-09-11"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q1GzRQt7EeaW5Y9P17xv3g" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZS1rUACDEeaRB-LfjKLnoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_xXe8YFiYEeWkUszwrjRJag"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_vl5LALs8EeSTjNEQkASznQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZS58wACDEeaRB-LfjKLnoA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZS6j0ACDEeaRB-LfjKLnoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/statemachine#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/UMLRealTimeSM-addendum.profile.uml#_KLcn0FDtEeOA4ecmvfqvaw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_b4oo4ACDEeaRB-LfjKLnoA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_b4p3AACDEeaRB-LfjKLnoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/uml-rt.profile.uml#_1h74oEeVEeO0lv5O1DTHOQ"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLRealTime:Capsule xmi:id="_9X71QAt7EeaW5Y9P17xv3g" base_Class="_9SDPsAt7EeaW5Y9P17xv3g"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_gYUO0At8EeaW5Y9P17xv3g" base_Package="_gYQkcAt8EeaW5Y9P17xv3g"/>
+  <UMLRealTime:RTMessageSet xmi:id="_gYX5MAt8EeaW5Y9P17xv3g" base_Interface="_gYVc8At8EeaW5Y9P17xv3g"/>
+  <UMLRealTime:RTMessageSet xmi:id="_gYdYwAt8EeaW5Y9P17xv3g" base_Interface="_gYbjkAt8EeaW5Y9P17xv3g" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_gYiRQAt8EeaW5Y9P17xv3g" base_Interface="_gYf1AAt8EeaW5Y9P17xv3g" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_gYlUkAt8EeaW5Y9P17xv3g" base_Collaboration="_gYLr8At8EeaW5Y9P17xv3g"/>
+  <UMLRealTime:RTPort xmi:id="_uPfkkAt9EeaW5Y9P17xv3g" base_Port="_uPdIUAt9EeaW5Y9P17xv3g"/>
+  <RTCppProperties:CapsuleProperties xmi:id="_EneTMAt-EeaW5Y9P17xv3g" implementationPreface="#include &lt;iostream>" base_Class="_9SDPsAt7EeaW5Y9P17xv3g"/>
+  <UMLRealTimeStateMach:RTStateMachine xmi:id="_fSCRUAt-EeaW5Y9P17xv3g" base_StateMachine="_RhpDkAt-EeaW5Y9P17xv3g"/>
+  <UMLRealTimeStateMach:RTRegion xmi:id="_g8tqcAt-EeaW5Y9P17xv3g" base_Region="_T3aoIAt-EeaW5Y9P17xv3g"/>
+  <UMLRealTimeStateMach:RTState xmi:id="_woPvMAt-EeaW5Y9P17xv3g" base_State="_tqBqkAt-EeaW5Y9P17xv3g"/>
+  <UMLRealTimeStateMach:RTPseudostate xmi:id="_ACGOEAt_EeaW5Y9P17xv3g" base_Pseudostate="_sRrXkAt-EeaW5Y9P17xv3g"/>
+</xmi:XMI>
