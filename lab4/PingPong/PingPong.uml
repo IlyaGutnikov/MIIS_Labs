@@ -36,7 +36,7 @@
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_gk88oAt8EeahKpDUmM4QfQ" name="Pinger">
         <region xmi:type="uml:Region" xmi:id="_hLq-YAt8EeahKpDUmM4QfQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_I8_IoAuDEeahKpDUmM4QfQ" name="initial" source="_-zVxYAt9EeahKpDUmM4QfQ" target="_JtRIUAt-EeahKpDUmM4QfQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_SwaxkAuDEeahKpDUmM4QfQ" name="onPong" source="_JtRIUAt-EeahKpDUmM4QfQ" target="_JtRIUAt-EeahKpDUmM4QfQ">
+          <transition xmi:type="uml:Transition" xmi:id="_SwaxkAuDEeahKpDUmM4QfQ" name="onPong" kind="local" source="_JtRIUAt-EeahKpDUmM4QfQ" target="_JtRIUAt-EeahKpDUmM4QfQ">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_0SCHEAuDEeahKpDUmM4QfQ" name="logTransition">
               <language>C++</language>
               <body>std::cout &lt;&lt; &quot;onPong transition taken!&quot; &lt;&lt; std::endl;</body>
@@ -57,12 +57,12 @@
         </region>
       </ownedBehavior>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2CTVYAuEEeahKpDUmM4QfQ" name="Ponger" classifierBehavior="_WECzkAuFEeahKpDUmM4QfQ" isActive="true">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2CTVYAuEEeahKpDUmM4QfQ" name="Ponger" visibility="package" classifierBehavior="_WECzkAuFEeahKpDUmM4QfQ" isActive="true">
       <ownedAttribute xmi:type="uml:Port" xmi:id="_FbUGwAuFEeahKpDUmM4QfQ" name="ponger" visibility="public" type="_NZbF8ACGEeaR0aa73_n8mg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true"/>
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_WECzkAuFEeahKpDUmM4QfQ" name="Ponger">
         <region xmi:type="uml:Region" xmi:id="_YHX9QAuFEeahKpDUmM4QfQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_w73xoAuFEeahKpDUmM4QfQ" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onPing" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
+          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onPing" kind="local" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_iGL6UAuGEeahKpDUmM4QfQ" name="logTransition">
               <language>C++</language>
               <body>if ( ponger.pong().send() ) {&#xD;
@@ -71,6 +71,7 @@
   std::cout &lt;&lt; &quot;Error sending Ping!&quot; &lt;&lt; std::endl;&#xD;
 }</body>
             </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_1DV7UAubEeagApEL_ETfWA" name="onPing" event="_aMoSsACGEeaR0aa73_n8mg" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
           </transition>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_m-qhoAuFEeahKpDUmM4QfQ" name="Initial1"/>
           <subvertex xmi:type="uml:State" xmi:id="_sCYTIAuFEeahKpDUmM4QfQ" name="Playing">
