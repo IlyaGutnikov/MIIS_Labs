@@ -1,0 +1,2 @@
+Top.RTConnector1
+    Top.rec1#Rec1.far[0] <-> Top.send1#send1.far[0]
