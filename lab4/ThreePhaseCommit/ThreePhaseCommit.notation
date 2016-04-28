@@ -91,7 +91,7 @@
   <notation:Diagram xmi:id="_hLrlcAt8EeahKpDUmM4QfQ" type="PapyrusUMLStateMachineDiagram" name="Send1" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_hLrlcQt8EeahKpDUmM4QfQ" type="2000">
       <children xmi:type="notation:DecorationNode" xmi:id="_hLrlcgt8EeahKpDUmM4QfQ" type="2001">
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlcwt8EeahKpDUmM4QfQ" width="700" height="44"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlcwt8EeahKpDUmM4QfQ" width="798" height="44"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_hLrldAt8EeahKpDUmM4QfQ" type="2002">
         <children xmi:type="notation:Shape" xmi:id="_hLrldQt8EeahKpDUmM4QfQ" type="3000">
@@ -153,25 +153,54 @@
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_xNosgQuEEeahKpDUmM4QfQ"/>
               </children>
               <element xmi:type="uml:State" href="ThreePhaseCommit.uml#_JtRIUAt-EeahKpDUmM4QfQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JtYdEQt-EeahKpDUmM4QfQ" x="280" y="102" width="252" height="127"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JtYdEQt-EeahKpDUmM4QfQ" x="280" y="102" width="252" height="104"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_tJob4A1CEeaYlb77y0JMNA" type="6000">
               <children xmi:type="notation:DecorationNode" xmi:id="_tJpC8A1CEeaYlb77y0JMNA" type="6001">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p1S18A1FEeaYlb77y0JMNA" width="160"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p1S18A1FEeaYlb77y0JMNA" width="261"/>
               </children>
               <children xmi:type="notation:DecorationNode" xmi:id="_tJpC8Q1CEeaYlb77y0JMNA" type="19003">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_tJpC8g1CEeaYlb77y0JMNA" x="40"/>
               </children>
               <children xmi:type="notation:DecorationNode" xmi:id="_tJpqAA1CEeaYlb77y0JMNA" type="6002">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJpqAQ1CEeaYlb77y0JMNA" y="-1" width="160"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJpqAQ1CEeaYlb77y0JMNA" y="-1" width="261"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_mgVFQA1FEeaYlb77y0JMNA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_mgVFQQ1FEeaYlb77y0JMNA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mgVFQg1FEeaYlb77y0JMNA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_Sz5sAA1HEeaYlb77y0JMNA" type="690">
+                <element xmi:type="uml:OpaqueBehavior" href="ThreePhaseCommit.uml#_Szaj0A1HEeaYlb77y0JMNA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_Sz5sAQ1HEeaYlb77y0JMNA"/>
               </children>
               <element xmi:type="uml:State" href="ThreePhaseCommit.uml#_tJXWIA1CEeaYlb77y0JMNA"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJob4Q1CEeaYlb77y0JMNA" x="378" y="306" width="160" height="131"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJob4Q1CEeaYlb77y0JMNA" x="279" y="267" width="261" height="106"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_jpo6EA1HEeaYlb77y0JMNA" type="6000">
+              <children xmi:type="notation:DecorationNode" xmi:id="_jpo6Eg1HEeaYlb77y0JMNA" type="6001">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mKKWEA1HEeaYlb77y0JMNA" width="266"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_jpo6Ew1HEeaYlb77y0JMNA" type="19003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_jpphIA1HEeaYlb77y0JMNA" x="40"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_jpphIQ1HEeaYlb77y0JMNA" type="6002">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jpphIg1HEeaYlb77y0JMNA" y="-1" width="266"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_jp6m4A1HEeaYlb77y0JMNA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_jp6m4Q1HEeaYlb77y0JMNA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jp6m4g1HEeaYlb77y0JMNA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_uVD68A1HEeaYlb77y0JMNA" type="690">
+                <element xmi:type="uml:OpaqueBehavior" href="ThreePhaseCommit.uml#_uU0DUA1HEeaYlb77y0JMNA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_uVD68Q1HEeaYlb77y0JMNA"/>
+              </children>
+              <element xmi:type="uml:State" href="ThreePhaseCommit.uml#_jpSUwA1HEeaYlb77y0JMNA"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jpo6EQ1HEeaYlb77y0JMNA" x="277" y="427" width="266" height="84"/>
             </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrleQt8EeahKpDUmM4QfQ"/>
           </children>
           <element xmi:type="uml:Region" href="ThreePhaseCommit.uml#_hLq-YAt8EeahKpDUmM4QfQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlegt8EeahKpDUmM4QfQ" width="700" height="496"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlegt8EeahKpDUmM4QfQ" width="798" height="541"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_0yIAkAt8EeahKpDUmM4QfQ" type="StereotypeComment">
           <styles xmi:type="notation:TitleStyle" xmi:id="_0yIAkQt8EeahKpDUmM4QfQ" showTitle="true"/>
@@ -181,10 +210,10 @@
           <element xsi:nil="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0yIAkgt8EeahKpDUmM4QfQ" x="200"/>
         </children>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlewt8EeahKpDUmM4QfQ" y="44" width="700" height="496"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlewt8EeahKpDUmM4QfQ" y="44" width="798" height="541"/>
       </children>
       <element xmi:type="uml:StateMachine" href="ThreePhaseCommit.uml#_gk88oAt8EeahKpDUmM4QfQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlfAt8EeahKpDUmM4QfQ" x="30" y="30" width="700" height="540"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrlfAt8EeahKpDUmM4QfQ" x="30" y="30" width="798" height="585"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_xVVwoAt8EeahKpDUmM4QfQ" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_xVVwoQt8EeahKpDUmM4QfQ" showTitle="true"/>
@@ -246,7 +275,7 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I9vWkAuDEeahKpDUmM4QfQ" id="(1.0,0.6865671641791045)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I9vWkQuDEeahKpDUmM4QfQ" id="(0.0,0.0967741935483871)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_Swm-0AuDEeahKpDUmM4QfQ" type="7000" source="_JtYdEAt-EeahKpDUmM4QfQ" target="_JtYdEAt-EeahKpDUmM4QfQ" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_Swm-0AuDEeahKpDUmM4QfQ" type="7000" source="_JtYdEAt-EeahKpDUmM4QfQ" target="_tJob4A1CEeaYlb77y0JMNA" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_Swm-0wuDEeahKpDUmM4QfQ" type="7001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Swm-1AuDEeahKpDUmM4QfQ"/>
       </children>
@@ -258,9 +287,41 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_Swm-0QuDEeahKpDUmM4QfQ"/>
       <element xmi:type="uml:Transition" href="ThreePhaseCommit.uml#_SwaxkAuDEeahKpDUmM4QfQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Swm-0guDEeahKpDUmM4QfQ" points="[-25, 47, 57, 0]$[-25, 109, 57, 62]$[-127, 109, -45, 62]$[-127, 47, -45, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SxOC0AuDEeahKpDUmM4QfQ" id="(1.0,0.5)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SxOC0QuDEeahKpDUmM4QfQ" id="(0.5,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Swm-0guDEeahKpDUmM4QfQ" points="[-45, 0, 38, -81]$[-45, 81, 38, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SxOC0AuDEeahKpDUmM4QfQ" id="(0.7182539682539683,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SxOC0QuDEeahKpDUmM4QfQ" id="(0.3793103448275862,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_xJUyUA1HEeaYlb77y0JMNA" type="7000" source="_tJob4A1CEeaYlb77y0JMNA" target="_jpo6EA1HEeaYlb77y0JMNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xJVZYA1HEeaYlb77y0JMNA" type="7001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xJVZYQ1HEeaYlb77y0JMNA"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xJVZYg1HEeaYlb77y0JMNA" visible="false" type="7002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xJVZYw1HEeaYlb77y0JMNA" x="-22" y="-145"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xJVZZA1HEeaYlb77y0JMNA" type="7003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xJVZZQ1HEeaYlb77y0JMNA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_xJUyUQ1HEeaYlb77y0JMNA"/>
+      <element xmi:type="uml:Transition" href="ThreePhaseCommit.uml#_xI9l8A1HEeaYlb77y0JMNA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xJUyUg1HEeaYlb77y0JMNA" points="[5, 53, -7, -71]$[23, 107, 11, -17]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xKczsA1HEeaYlb77y0JMNA" id="(0.5440613026819924,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xKczsQ1HEeaYlb77y0JMNA" id="(0.5637065637065637,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_zmVx4A1IEeaYlb77y0JMNA" type="7000" source="_jpo6EA1HEeaYlb77y0JMNA" target="_JtYdEAt-EeahKpDUmM4QfQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_zmVx4w1IEeaYlb77y0JMNA" type="7001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zmVx5A1IEeaYlb77y0JMNA" x="-16" y="-6"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zmVx5Q1IEeaYlb77y0JMNA" visible="false" type="7002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zmVx5g1IEeaYlb77y0JMNA"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zmWY8A1IEeaYlb77y0JMNA" type="7003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zmWY8Q1IEeaYlb77y0JMNA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_zmVx4Q1IEeaYlb77y0JMNA"/>
+      <element xmi:type="uml:Transition" href="ThreePhaseCommit.uml#_zl9XYA1IEeaYlb77y0JMNA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zmVx4g1IEeaYlb77y0JMNA" points="[0, -1, 11, 306]$[184, -1, 195, 306]$[184, -164, 195, 143]$[184, -307, 195, 0]$[-11, -307, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_znXFkA1IEeaYlb77y0JMNA" id="(1.0,0.4523809523809524)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_znXsoA1IEeaYlb77y0JMNA" id="(1.0,0.5384615384615384)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_2CvaQAuEEeahKpDUmM4QfQ" type="CompositeStructure" measurementUnit="Pixel">
