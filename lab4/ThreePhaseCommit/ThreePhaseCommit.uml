@@ -11,10 +11,10 @@
         </interfaceRealization>
       </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_NgjBoACGEeaR0aa73_n8mg" name="Protocol1">
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_lhpDIACGEeaR0aa73_n8mg" name="canCommit"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_nYcgYA1CEeaYlb77y0JMNA" name="Yes"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_Ng4Y0ACGEeaR0aa73_n8mg" name="Protocol1~">
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_aMjaMACGEeaR0aa73_n8mg" name="yes"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZKiQMA1CEeaYlb77y0JMNA" name="canCommit"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_NhBiwACGEeaR0aa73_n8mg" client="_NZbF8ACGEeaR0aa73_n8mg" supplier="_Ng4Y0ACGEeaR0aa73_n8mg">
         <name xsi:nil="true"/>
@@ -24,10 +24,10 @@
       <packagedElement xmi:type="uml:Usage" xmi:id="_NhNwAACGEeaR0aa73_n8mg" client="_NZbF8ACGEeaR0aa73_n8mg" supplier="_NhD_AACGEeaR0aa73_n8mg">
         <name xsi:nil="true"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:CallEvent" xmi:id="_aMoSsACGEeaR0aa73_n8mg" operation="_aMjaMACGEeaR0aa73_n8mg">
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_ZKsoQA1CEeaYlb77y0JMNA" operation="_ZKiQMA1CEeaYlb77y0JMNA">
         <name xsi:nil="true"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:CallEvent" xmi:id="_lhq4UACGEeaR0aa73_n8mg" operation="_lhpDIACGEeaR0aa73_n8mg">
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_nYjOEA1CEeaYlb77y0JMNA" operation="_nYcgYA1CEeaYlb77y0JMNA">
         <name xsi:nil="true"/>
       </packagedElement>
     </packagedElement>
@@ -36,24 +36,25 @@
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_gk88oAt8EeahKpDUmM4QfQ" name="Send1">
         <region xmi:type="uml:Region" xmi:id="_hLq-YAt8EeahKpDUmM4QfQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_I8_IoAuDEeahKpDUmM4QfQ" name="initial" source="_-zVxYAt9EeahKpDUmM4QfQ" target="_JtRIUAt-EeahKpDUmM4QfQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_SwaxkAuDEeahKpDUmM4QfQ" name="onPong" source="_JtRIUAt-EeahKpDUmM4QfQ" target="_JtRIUAt-EeahKpDUmM4QfQ">
+          <transition xmi:type="uml:Transition" xmi:id="_SwaxkAuDEeahKpDUmM4QfQ" name="onYes" source="_JtRIUAt-EeahKpDUmM4QfQ" target="_JtRIUAt-EeahKpDUmM4QfQ">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_0SCHEAuDEeahKpDUmM4QfQ" name="logTransition">
               <language>C++</language>
               <body>std::cout &lt;&lt; &quot;onCanCommit transition taken!&quot; &lt;&lt; std::endl;</body>
             </effect>
-            <trigger xmi:type="uml:Trigger" xmi:id="_mlKucAuDEeahKpDUmM4QfQ" name="onPong" event="_lhq4UACGEeaR0aa73_n8mg" port="_nRVKgAt7EeahKpDUmM4QfQ"/>
+            <trigger xmi:type="uml:Trigger" xmi:id="_mlKucAuDEeahKpDUmM4QfQ" name="onYes" event="_nYjOEA1CEeaYlb77y0JMNA" port="_nRVKgAt7EeahKpDUmM4QfQ"/>
           </transition>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_-zVxYAt9EeahKpDUmM4QfQ" name="Initial1"/>
           <subvertex xmi:type="uml:State" xmi:id="_JtRIUAt-EeahKpDUmM4QfQ" name="Playing" visibility="package">
-            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_xM00MAuEEeahKpDUmM4QfQ" name="sendPing" visibility="public">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_xM00MAuEEeahKpDUmM4QfQ" name="sendCanCommit" visibility="public">
               <language>C++</language>
-              <body> if ( send1.yes().send() ) {&#xD;
-  std::cout &lt;&lt; &quot;Yes sent!&quot; &lt;&lt; std::endl;&#xD;
+              <body> if ( send1.canCommit().send() ) {&#xD;
+  std::cout &lt;&lt; &quot;canCommit sent!&quot; &lt;&lt; std::endl;&#xD;
 } else {&#xD;
-  std::cout &lt;&lt; &quot;Error sending Ping!&quot; &lt;&lt; std::endl;&#xD;
+  std::cout &lt;&lt; &quot;Error sending canCommit!&quot; &lt;&lt; std::endl;&#xD;
 }</body>
             </entry>
           </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_tJXWIA1CEeaYlb77y0JMNA" name="State1"/>
         </region>
       </ownedBehavior>
     </packagedElement>
@@ -71,11 +72,11 @@
   std::cout &lt;&lt; &quot;Error sending canCommit!&quot; &lt;&lt; std::endl;&#xD;
 }</body>
             </effect>
-            <trigger xmi:type="uml:Trigger" xmi:id="_1DV7UAubEeagApEL_ETfWA" name="onPing" event="_aMoSsACGEeaR0aa73_n8mg" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
+            <trigger xmi:type="uml:Trigger" xmi:id="_1DV7UAubEeagApEL_ETfWA" name="onPing" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
           </transition>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_m-qhoAuFEeahKpDUmM4QfQ" name="Initial1"/>
-          <subvertex xmi:type="uml:State" xmi:id="_sCYTIAuFEeahKpDUmM4QfQ" name="Playing" visibility="package">
-            <deferrableTrigger xmi:type="uml:Trigger" xmi:id="_TLn_gAuGEeahKpDUmM4QfQ" name="onPing" event="_aMoSsACGEeaR0aa73_n8mg" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
+          <subvertex xmi:type="uml:State" xmi:id="_sCYTIAuFEeahKpDUmM4QfQ" name="stage1" visibility="package">
+            <deferrableTrigger xmi:type="uml:Trigger" xmi:id="_TLn_gAuGEeahKpDUmM4QfQ" name="onPing" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
           </subvertex>
         </region>
       </ownedBehavior>
