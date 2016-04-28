@@ -15,7 +15,9 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_QOCnkA1IEeaYlb77y0JMNA" name="ACK"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_qtynYA1JEeaYlb77y0JMNA" name="haveCommitted"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_Ng4Y0ACGEeaR0aa73_n8mg" name="Protocol1~"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_Ng4Y0ACGEeaR0aa73_n8mg" name="Protocol1~">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_oHqnwA1LEeaYlb77y0JMNA" name="canCommit"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_NhBiwACGEeaR0aa73_n8mg" client="_NZbF8ACGEeaR0aa73_n8mg" supplier="_Ng4Y0ACGEeaR0aa73_n8mg">
         <name xsi:nil="true"/>
       </packagedElement>
@@ -31,6 +33,9 @@
         <name xsi:nil="true"/>
       </packagedElement>
       <packagedElement xmi:type="uml:CallEvent" xmi:id="_qt1DoA1JEeaYlb77y0JMNA" operation="_qtynYA1JEeaYlb77y0JMNA">
+        <name xsi:nil="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_oHtEAA1LEeaYlb77y0JMNA" operation="_oHqnwA1LEeaYlb77y0JMNA">
         <name xsi:nil="true"/>
       </packagedElement>
     </packagedElement>
@@ -99,16 +104,16 @@
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_WECzkAuFEeahKpDUmM4QfQ" name="Rec1">
         <region xmi:type="uml:Region" xmi:id="_YHX9QAuFEeahKpDUmM4QfQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_w73xoAuFEeahKpDUmM4QfQ" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onPing" kind="local" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
+          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onCanCommit" kind="local" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_iGL6UAuGEeahKpDUmM4QfQ" name="logTransition">
               <language>C++</language>
-              <body>if ( Rec1.canCommit().send() ) {&#xD;
-  std::cout &lt;&lt; &quot;canCommit sent!&quot; &lt;&lt; std::endl;&#xD;
+              <body>if ( Rec1.Yes().send() ) {&#xD;
+  std::cout &lt;&lt; &quot;Yes sent!&quot; &lt;&lt; std::endl;&#xD;
 } else {&#xD;
-  std::cout &lt;&lt; &quot;Error sending canCommit!&quot; &lt;&lt; std::endl;&#xD;
+  std::cout &lt;&lt; &quot;Error sending Yes!&quot; &lt;&lt; std::endl;&#xD;
 }</body>
             </effect>
-            <trigger xmi:type="uml:Trigger" xmi:id="_1DV7UAubEeagApEL_ETfWA" name="onPing" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
+            <trigger xmi:type="uml:Trigger" xmi:id="_1DV7UAubEeagApEL_ETfWA" name="onCanCommit" event="_oHtEAA1LEeaYlb77y0JMNA" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
           </transition>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_m-qhoAuFEeahKpDUmM4QfQ" name="Initial1"/>
           <subvertex xmi:type="uml:State" xmi:id="_sCYTIAuFEeahKpDUmM4QfQ" name="stage1" visibility="package">

@@ -555,10 +555,10 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_yw7OwAuFEeahKpDUmM4QfQ" type="7000" source="_sCeZwAuFEeahKpDUmM4QfQ" target="_sCeZwAuFEeahKpDUmM4QfQ" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_yw7OwwuFEeahKpDUmM4QfQ" type="7001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_yw7OxAuFEeahKpDUmM4QfQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yw7OxAuFEeahKpDUmM4QfQ" x="1" y="-19"/>
       </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_yw7OxQuFEeahKpDUmM4QfQ" type="7002">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_yw710AuFEeahKpDUmM4QfQ"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yw7OxQuFEeahKpDUmM4QfQ" visible="false" type="7002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yw710AuFEeahKpDUmM4QfQ" x="-145" y="6"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_yw710QuFEeahKpDUmM4QfQ" type="7003">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_yw710guFEeahKpDUmM4QfQ" y="60"/>
