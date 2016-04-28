@@ -119,13 +119,13 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_JtYdEAt-EeahKpDUmM4QfQ" type="6000">
               <children xmi:type="notation:DecorationNode" xmi:id="_JtYdEgt-EeahKpDUmM4QfQ" type="6001">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NhtqUAt-EeahKpDUmM4QfQ" width="163"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NhtqUAt-EeahKpDUmM4QfQ" width="252"/>
               </children>
               <children xmi:type="notation:DecorationNode" xmi:id="_JtZEIAt-EeahKpDUmM4QfQ" type="19003">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_JtZEIQt-EeahKpDUmM4QfQ" x="40"/>
               </children>
               <children xmi:type="notation:DecorationNode" xmi:id="_JtZEIgt-EeahKpDUmM4QfQ" type="6002">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JtZEIwt-EeahKpDUmM4QfQ" y="-1" width="163"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JtZEIwt-EeahKpDUmM4QfQ" y="-1" width="252"/>
               </children>
               <children xmi:type="notation:BasicCompartment" xmi:id="_JtlRYAt-EeahKpDUmM4QfQ" type="compartment_shape_display">
                 <styles xmi:type="notation:TitleStyle" xmi:id="_JtlRYQt-EeahKpDUmM4QfQ"/>
@@ -153,20 +153,20 @@
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_xNosgQuEEeahKpDUmM4QfQ"/>
               </children>
               <element xmi:type="uml:State" href="ThreePhaseCommit.uml#_JtRIUAt-EeahKpDUmM4QfQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JtYdEQt-EeahKpDUmM4QfQ" x="319" y="102" width="163" height="93"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JtYdEQt-EeahKpDUmM4QfQ" x="280" y="102" width="252" height="127"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_tJob4A1CEeaYlb77y0JMNA" type="6000">
               <children xmi:type="notation:DecorationNode" xmi:id="_tJpC8A1CEeaYlb77y0JMNA" type="6001">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p1S18A1FEeaYlb77y0JMNA" width="127"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p1S18A1FEeaYlb77y0JMNA" width="160"/>
               </children>
               <children xmi:type="notation:DecorationNode" xmi:id="_tJpC8Q1CEeaYlb77y0JMNA" type="19003">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_tJpC8g1CEeaYlb77y0JMNA" x="40"/>
               </children>
               <children xmi:type="notation:DecorationNode" xmi:id="_tJpqAA1CEeaYlb77y0JMNA" type="6002">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJpqAQ1CEeaYlb77y0JMNA" y="-1" width="127"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJpqAQ1CEeaYlb77y0JMNA" y="-1" width="160"/>
               </children>
               <element xmi:type="uml:State" href="ThreePhaseCommit.uml#_tJXWIA1CEeaYlb77y0JMNA"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJob4Q1CEeaYlb77y0JMNA" x="391" y="321" width="127"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tJob4Q1CEeaYlb77y0JMNA" x="378" y="306" width="160" height="131"/>
             </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLrleQt8EeahKpDUmM4QfQ"/>
           </children>
@@ -250,8 +250,8 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_Swm-0wuDEeahKpDUmM4QfQ" type="7001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Swm-1AuDEeahKpDUmM4QfQ"/>
       </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_Swnl4AuDEeahKpDUmM4QfQ" type="7002">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_Swnl4QuDEeahKpDUmM4QfQ"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Swnl4AuDEeahKpDUmM4QfQ" visible="false" type="7002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Swnl4QuDEeahKpDUmM4QfQ" x="-104" y="22"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_Swnl4guDEeahKpDUmM4QfQ" type="7003">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Swnl4wuDEeahKpDUmM4QfQ" y="60"/>
