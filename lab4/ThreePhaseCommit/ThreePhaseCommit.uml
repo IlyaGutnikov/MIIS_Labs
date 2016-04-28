@@ -17,6 +17,8 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_Ng4Y0ACGEeaR0aa73_n8mg" name="Protocol1~">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_oHqnwA1LEeaYlb77y0JMNA" name="canCommit"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_W38vQA1SEeaYlb77y0JMNA" name="preCommit"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_OY9pYA1VEeaYlb77y0JMNA" name="doCommit"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_NhBiwACGEeaR0aa73_n8mg" client="_NZbF8ACGEeaR0aa73_n8mg" supplier="_Ng4Y0ACGEeaR0aa73_n8mg">
         <name xsi:nil="true"/>
@@ -36,6 +38,12 @@
         <name xsi:nil="true"/>
       </packagedElement>
       <packagedElement xmi:type="uml:CallEvent" xmi:id="_oHtEAA1LEeaYlb77y0JMNA" operation="_oHqnwA1LEeaYlb77y0JMNA">
+        <name xsi:nil="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_W3_LgA1SEeaYlb77y0JMNA" operation="_W38vQA1SEeaYlb77y0JMNA">
+        <name xsi:nil="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_OY_ekA1VEeaYlb77y0JMNA" operation="_OY9pYA1VEeaYlb77y0JMNA">
         <name xsi:nil="true"/>
       </packagedElement>
     </packagedElement>
@@ -104,7 +112,7 @@
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_WECzkAuFEeahKpDUmM4QfQ" name="Rec1">
         <region xmi:type="uml:Region" xmi:id="_YHX9QAuFEeahKpDUmM4QfQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_w73xoAuFEeahKpDUmM4QfQ" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onCanCommit" kind="local" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_t4p5gA1MEeaYlb77y0JMNA">
+          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onCanCommit" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_iGL6UAuGEeahKpDUmM4QfQ" name="logTransition">
               <language>C++</language>
               <body>if ( Rec1.Yes().send() ) {&#xD;
@@ -115,30 +123,39 @@
             </effect>
             <trigger xmi:type="uml:Trigger" xmi:id="_1DV7UAubEeagApEL_ETfWA" name="onCanCommit" event="_oHtEAA1LEeaYlb77y0JMNA" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
           </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_SZnYMA1REeaYlb77y0JMNA" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_P-ahEA1REeaYlb77y0JMNA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_LYbX8A1SEeaYlb77y0JMNA" name="onPreCommit" source="_P-ahEA1REeaYlb77y0JMNA" target="_P-ahEA1REeaYlb77y0JMNA">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_20lD8A1SEeaYlb77y0JMNA" name="logTransition">
+              <language>C++</language>
+              <body>if ( Rec1.ACK().send() ) { 
+     std::cout &lt;&lt; &quot;ACK sent!&quot; &lt;&lt; std::endl; 
+} else { 
+     std::cout &lt;&lt; &quot;Error sending ACK!&quot; &lt;&lt; std::endl;
+}</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_SkhyQA1SEeaYlb77y0JMNA" name="onPreCommit" event="_W3_LgA1SEeaYlb77y0JMNA" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_vKURgA1TEeaYlb77y0JMNA" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_cHaoUA1TEeaYlb77y0JMNA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_KrvmMA1UEeaYlb77y0JMNA" name="onDoCommit" source="_cHaoUA1TEeaYlb77y0JMNA" target="_cHaoUA1TEeaYlb77y0JMNA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2PwNsA1UEeaYlb77y0JMNA" name="onDoCommit" source="_0fz6EA1UEeaYlb77y0JMNA" target="_0fz6EA1UEeaYlb77y0JMNA">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_mDp9EA1VEeaYlb77y0JMNA" name="logTransition">
+              <language>C++</language>
+              <body>if ( Rec1.haveCommitted().send()){
+     std::cout &lt;&lt; &quot;Ping sent!&quot; &lt;&lt; std::endl; 
+} else {
+     std::cout &lt;&lt; &quot;Error sending Ping!&quot; &lt;&lt; std::endl; 
+}</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_UzpN0A1VEeaYlb77y0JMNA" name="onDoCommit" event="_OY_ekA1VEeaYlb77y0JMNA" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_FG6PMA1VEeaYlb77y0JMNA" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_0fz6EA1UEeaYlb77y0JMNA"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_m-qhoAuFEeahKpDUmM4QfQ" name="Initial1"/>
           <subvertex xmi:type="uml:State" xmi:id="_sCYTIAuFEeahKpDUmM4QfQ" name="stage1" visibility="package">
             <deferrableTrigger xmi:type="uml:Trigger" xmi:id="_TLn_gAuGEeahKpDUmM4QfQ" name="onPing" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
           </subvertex>
-          <subvertex xmi:type="uml:State" xmi:id="_t4p5gA1MEeaYlb77y0JMNA" name="stage2" visibility="protected">
-            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_lWVdsA1NEeaYlb77y0JMNA" name="ACK">
-              <language>C++</language>
-              <body>if ( Rec1.ACK().send() ) { 
-     std::cout &lt;&lt; &quot;ACK sent!&quot; &lt;&lt; std::endl;
-} else { 
-     std::cout &lt;&lt; &quot;Error sending ACK!&quot; &lt;&lt; std::endl;
- }</body>
-            </entry>
-          </subvertex>
-          <subvertex xmi:type="uml:State" xmi:id="_3XNpMA1NEeaYlb77y0JMNA" name="stage3" visibility="public">
-            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_RD_JYA1OEeaYlb77y0JMNA" name="haveCommitted">
-              <language>C++</language>
-              <body>if ( Rec1.doCommit().send() ) { 
-     std::cout &lt;&lt; &quot;doCommit sent!&quot; &lt;&lt; std::endl; 
-} else { 
-     std::cout &lt;&lt; &quot;Error sending doCommit!&quot; &lt;&lt; std::endl;
-}</body>
-            </entry>
-          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_P-ahEA1REeaYlb77y0JMNA" name="stage2"/>
+          <subvertex xmi:type="uml:State" xmi:id="_cHaoUA1TEeaYlb77y0JMNA" name="stage3"/>
+          <subvertex xmi:type="uml:State" xmi:id="_0fz6EA1UEeaYlb77y0JMNA" name="state3"/>
         </region>
       </ownedBehavior>
     </packagedElement>
@@ -214,4 +231,12 @@
   <UMLRealTime:CapsulePart xmi:id="_dqirEAuqEeagApEL_ETfWA" base_Property="_dqfnwAuqEeagApEL_ETfWA"/>
   <UMLRealTime:RTConnector xmi:id="_eWxe8AuqEeagApEL_ETfWA" base_Connector="_eWuboAuqEeagApEL_ETfWA"/>
   <ActionLanguage:TextualRepresentation xmi:id="_vKiYIA1MEeaYlb77y0JMNA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_uNu00A1QEeaYlb77y0JMNA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_nemN4A1REeaYlb77y0JMNA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <UMLRealTimeStateMach:RTState xmi:id="_H4iJoA1SEeaYlb77y0JMNA" base_State="_P-ahEA1REeaYlb77y0JMNA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_dzjaAA1TEeaYlb77y0JMNA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <UMLRealTimeStateMach:RTState xmi:id="_02NdUA1TEeaYlb77y0JMNA" base_State="_cHaoUA1TEeaYlb77y0JMNA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_B94eMA1UEeaYlb77y0JMNA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_LyPUMA1UEeaYlb77y0JMNA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <UMLRealTimeStateMach:RTState xmi:id="_7IVtQA1UEeaYlb77y0JMNA" base_State="_0fz6EA1UEeaYlb77y0JMNA"/>
 </xmi:XMI>
