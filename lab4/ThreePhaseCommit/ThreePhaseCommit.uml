@@ -104,7 +104,7 @@
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_WECzkAuFEeahKpDUmM4QfQ" name="Rec1">
         <region xmi:type="uml:Region" xmi:id="_YHX9QAuFEeahKpDUmM4QfQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_w73xoAuFEeahKpDUmM4QfQ" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onCanCommit" kind="local" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
+          <transition xmi:type="uml:Transition" xmi:id="_ywwPoAuFEeahKpDUmM4QfQ" name="onCanCommit" kind="local" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_t4p5gA1MEeaYlb77y0JMNA">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_iGL6UAuGEeahKpDUmM4QfQ" name="logTransition">
               <language>C++</language>
               <body>if ( Rec1.Yes().send() ) {&#xD;
@@ -118,6 +118,26 @@
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_m-qhoAuFEeahKpDUmM4QfQ" name="Initial1"/>
           <subvertex xmi:type="uml:State" xmi:id="_sCYTIAuFEeahKpDUmM4QfQ" name="stage1" visibility="package">
             <deferrableTrigger xmi:type="uml:Trigger" xmi:id="_TLn_gAuGEeahKpDUmM4QfQ" name="onPing" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_t4p5gA1MEeaYlb77y0JMNA" name="stage2" visibility="protected">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_lWVdsA1NEeaYlb77y0JMNA" name="ACK">
+              <language>C++</language>
+              <body>if ( Rec1.ACK().send() ) { 
+     std::cout &lt;&lt; &quot;ACK sent!&quot; &lt;&lt; std::endl;
+} else { 
+     std::cout &lt;&lt; &quot;Error sending ACK!&quot; &lt;&lt; std::endl;
+ }</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_3XNpMA1NEeaYlb77y0JMNA" name="stage3" visibility="public">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_RD_JYA1OEeaYlb77y0JMNA" name="haveCommitted">
+              <language>C++</language>
+              <body>if ( Rec1.doCommit().send() ) { 
+     std::cout &lt;&lt; &quot;doCommit sent!&quot; &lt;&lt; std::endl; 
+} else { 
+     std::cout &lt;&lt; &quot;Error sending doCommit!&quot; &lt;&lt; std::endl;
+}</body>
+            </entry>
           </subvertex>
         </region>
       </ownedBehavior>
@@ -193,4 +213,5 @@
   <UMLRealTime:CapsulePart xmi:id="_cZqSAAuqEeagApEL_ETfWA" base_Property="_cZoc0AuqEeagApEL_ETfWA"/>
   <UMLRealTime:CapsulePart xmi:id="_dqirEAuqEeagApEL_ETfWA" base_Property="_dqfnwAuqEeagApEL_ETfWA"/>
   <UMLRealTime:RTConnector xmi:id="_eWxe8AuqEeagApEL_ETfWA" base_Connector="_eWuboAuqEeagApEL_ETfWA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_vKiYIA1MEeaYlb77y0JMNA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
 </xmi:XMI>
