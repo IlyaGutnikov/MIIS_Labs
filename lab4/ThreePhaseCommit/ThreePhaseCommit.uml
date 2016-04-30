@@ -124,7 +124,7 @@
             <trigger xmi:type="uml:Trigger" xmi:id="_1DV7UAubEeagApEL_ETfWA" name="onCanCommit" event="_oHtEAA1LEeaYlb77y0JMNA" port="_FbUGwAuFEeahKpDUmM4QfQ"/>
           </transition>
           <transition xmi:type="uml:Transition" xmi:id="_SZnYMA1REeaYlb77y0JMNA" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_P-ahEA1REeaYlb77y0JMNA"/>
-          <transition xmi:type="uml:Transition" xmi:id="_LYbX8A1SEeaYlb77y0JMNA" name="onPreCommit" source="_P-ahEA1REeaYlb77y0JMNA" target="_P-ahEA1REeaYlb77y0JMNA">
+          <transition xmi:type="uml:Transition" xmi:id="_LYbX8A1SEeaYlb77y0JMNA" name="onPreCommit" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_20lD8A1SEeaYlb77y0JMNA" name="logTransition">
               <language>C++</language>
               <body>if ( Rec1.ACK().send() ) { 
@@ -137,7 +137,7 @@
           </transition>
           <transition xmi:type="uml:Transition" xmi:id="_vKURgA1TEeaYlb77y0JMNA" source="_m-qhoAuFEeahKpDUmM4QfQ" target="_cHaoUA1TEeaYlb77y0JMNA"/>
           <transition xmi:type="uml:Transition" xmi:id="_KrvmMA1UEeaYlb77y0JMNA" name="onDoCommit" source="_cHaoUA1TEeaYlb77y0JMNA" target="_cHaoUA1TEeaYlb77y0JMNA"/>
-          <transition xmi:type="uml:Transition" xmi:id="_2PwNsA1UEeaYlb77y0JMNA" name="onDoCommit" source="_0fz6EA1UEeaYlb77y0JMNA" target="_0fz6EA1UEeaYlb77y0JMNA">
+          <transition xmi:type="uml:Transition" xmi:id="_2PwNsA1UEeaYlb77y0JMNA" name="onDoCommit" source="_sCYTIAuFEeahKpDUmM4QfQ" target="_sCYTIAuFEeahKpDUmM4QfQ">
             <effect xmi:type="uml:OpaqueBehavior" xmi:id="_mDp9EA1VEeaYlb77y0JMNA" name="logTransition">
               <language>C++</language>
               <body>if ( Rec1.haveCommitted().send()){
