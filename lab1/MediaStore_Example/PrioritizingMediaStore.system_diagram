@@ -100,7 +100,7 @@
       <layoutConstraint xsi:type="notation:Bounds" x="-59" y="92"/>
     </children>
     <element href="PrioritizingMediaStore.system#_yy4CAGaiEeCCuI19Qg4dIw"/>
-    <layoutConstraint xsi:type="notation:Bounds" width="681"/>
+    <layoutConstraint xsi:type="notation:Bounds" width="805"/>
   </children>
   <styles xsi:type="notation:DiagramStyle"/>
   <element href="PrioritizingMediaStore.system#_yy4CAGaiEeCCuI19Qg4dIw"/>

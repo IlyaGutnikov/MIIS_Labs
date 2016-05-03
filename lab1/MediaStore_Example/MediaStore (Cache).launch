@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="de.uka.ipd.sdq.simucontroller.SimuLaunching">
-<stringAttribute key="EDP2RepositoryID" value="_N7cYMA_MEeau7dSRvIh47w"/>
+<stringAttribute key="EDP2RepositoryID" value="_USVdMBCaEeanPN8w_kxZ0g"/>
 <stringAttribute key="accuracyQualityAnnotationFile" value=""/>
-<stringAttribute key="allocationFile" value="platform:/resource/MediaStore_Example/WithCache.allocation"/>
+<stringAttribute key="allocationFile" value="platform:/resource/MediaStoreExample/WithCache.allocation"/>
 <booleanAttribute key="clear" value="true"/>
 <listAttribute key="completion.config"/>
 <booleanAttribute key="completion.qvt.verbose.logging" value="false"/>
@@ -13,7 +13,7 @@
 <stringAttribute key="confidenceModelElementName" value=""/>
 <stringAttribute key="confidenceModelElementURI" value=""/>
 <booleanAttribute key="confidenceUseAutomaticBatches" value="false"/>
-<intAttribute key="datasourceID" value="0"/>
+<intAttribute key="datasourceID" value="1"/>
 <intAttribute key="de.uka.ipd.sdq.workflowengine.debuglevel" value="2"/>
 <stringAttribute key="eventMiddlewareRepositoryFile" value="pathmap://PCM_MODELS/default_event_middleware.repository"/>
 <stringAttribute key="experimentRun" value="MediaStore (Cache)"/>
@@ -29,17 +29,17 @@
 <stringAttribute key="minimum" value=""/>
 <stringAttribute key="mwRepositoryFile" value="pathmap://PCM_MODELS/Glassfish.repository"/>
 <stringAttribute key="outpath" value="de.uka.ipd.sdq.codegen.simucominstance"/>
-<stringAttribute key="persistenceFramework" value="SensorFramework"/>
+<stringAttribute key="persistenceFramework" value="Experiment Data Persistency &amp; Presentation (EDP2)"/>
 <booleanAttribute key="reliability.simulateFailures" value="true"/>
 <stringAttribute key="rmiRepositoryFile" value="pathmap://PCM_MODELS/Glassfish.repository"/>
-<stringAttribute key="simTime" value="15000"/>
+<stringAttribute key="simTime" value="1500"/>
 <booleanAttribute key="simulateAccuracy" value="false"/>
 <booleanAttribute key="simulateFailures" value="false"/>
 <booleanAttribute key="simulateLinkingResources" value="true"/>
 <booleanAttribute key="simulateThroughputOfLinkingResources" value="true"/>
 <stringAttribute key="simulatorId" value="de.uka.ipd.sdq.codegen.simucontroller.simucom"/>
 <stringAttribute key="stepwidth" value=""/>
-<stringAttribute key="usageFile" value="platform:/resource/MediaStore_Example/default.usagemodel"/>
+<stringAttribute key="usageFile" value="platform:/resource/MediaStoreExample/default.usagemodel"/>
 <booleanAttribute key="useConfidenceStopCondition" value="false"/>
 <booleanAttribute key="useFixedSeed" value="false"/>
 <stringAttribute key="variable" value=""/>

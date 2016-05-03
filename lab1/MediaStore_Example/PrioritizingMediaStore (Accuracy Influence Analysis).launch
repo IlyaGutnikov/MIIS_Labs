@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="de.uka.ipd.sdq.simucontroller.SimuLaunching">
+<stringAttribute key="EDP2RepositoryID" value="_USVdMBCaEeanPN8w_kxZ0g"/>
 <stringAttribute key="accuracyQualityAnnotationFile" value="platform:/resource/MediaStoreExample/PrioritizingMediaStore.quality"/>
 <stringAttribute key="allocationFile" value="platform:/resource/MediaStoreExample/PrioritizingMediaStore.allocation"/>
 <booleanAttribute key="clear" value="true"/>
@@ -29,11 +30,14 @@
 <stringAttribute key="minimum" value=""/>
 <stringAttribute key="mwRepositoryFile" value="pathmap://PCM_MODELS/Glassfish.repository"/>
 <stringAttribute key="outpath" value="de.uka.ipd.sdq.temporary"/>
-<stringAttribute key="persistenceFramework" value="SensorFramework"/>
+<stringAttribute key="persistenceFramework" value="Experiment Data Persistency &amp; Presentation (EDP2)"/>
+<booleanAttribute key="reliability.simulateFailures" value="true"/>
+<stringAttribute key="rmiRepositoryFile" value="pathmap://PCM_MODELS/Glassfish.repository"/>
 <stringAttribute key="simTime" value="15000"/>
 <booleanAttribute key="simulateAccuracy" value="true"/>
 <booleanAttribute key="simulateFailures" value="false"/>
 <booleanAttribute key="simulateLinkingResources" value="false"/>
+<booleanAttribute key="simulateThroughputOfLinkingResources" value="true"/>
 <stringAttribute key="simulatorId" value="de.uka.ipd.sdq.codegen.simucontroller.simucom"/>
 <stringAttribute key="stepwidth" value=""/>
 <stringAttribute key="usageFile" value="platform:/resource/MediaStoreExample/PrioritizingMediaStore.usagemodel"/>
@@ -41,5 +45,6 @@
 <booleanAttribute key="useFixedSeed" value="false"/>
 <booleanAttribute key="useHddParameters" value="false"/>
 <stringAttribute key="variable" value=""/>
+<stringAttribute key="variationId" value=""/>
 <booleanAttribute key="verboseLogging" value="false"/>
 </launchConfiguration>
