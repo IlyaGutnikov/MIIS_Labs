@@ -232,7 +232,7 @@
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_FlyJYnXlEeKEDJ51kkuoUw"/>
           <element xmi:type="uml:ReadSelfAction" href="BasicActiveObjectExample.uml#_FlyJYHXlEeKEDJ51kkuoUw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FlyJY3XlEeKEDJ51kkuoUw" x="235" y="279"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FlyJY3XlEeKEDJ51kkuoUw" x="157" y="279" width="99"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_MV_R4HXlEeKEDJ51kkuoUw" type="3010">
           <children xmi:type="notation:Shape" xmi:id="_MV_R5HXlEeKEDJ51kkuoUw" type="3027">
