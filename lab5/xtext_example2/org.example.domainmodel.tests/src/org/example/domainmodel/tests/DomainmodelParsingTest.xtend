@@ -11,6 +11,8 @@ import org.example.domainmodel.domainmodel.Domainmodel
 import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith
+import static org.junit.Assert.*
+import org.example.domainmodel.domainmodel.Entity
 
 @RunWith(XtextRunner)
 @InjectWith(DomainmodelInjectorProvider)
@@ -26,5 +28,15 @@ class DomainmodelParsingTest{
 		''')
 		Assert.assertNotNull(result)
 	}
+	
+	@Test 
+    def void parseDomainmodel() {
+        val model = parseHelper.parse(
+            "entity MyEntity {
+                parent: MyEntity
+            }")
+        val entity = model.elements.head as Entity
+        assertSame(entity, entity.features.head.type)
+    }
 
 }

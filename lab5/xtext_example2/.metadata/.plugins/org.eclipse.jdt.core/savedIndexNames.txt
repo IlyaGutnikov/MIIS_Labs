@@ -3,8 +3,10 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 3948695164.index
 3784372545.index
 179881252.index
+1825362511.index
 443871635.index
 3456844723.index
+3839748577.index
 1820186910.index
 2288403918.index
 900364629.index
@@ -14,6 +16,7 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 3742607394.index
 1575045934.index
 3358375979.index
+2237980719.index
 2497576214.index
 459037510.index
 299851083.index
@@ -34,6 +37,7 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 524421535.index
 3868038658.index
 4169559209.index
+305189579.index
 2909104533.index
 1819685514.index
 1847787332.index
@@ -62,6 +66,7 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 2325736830.index
 3321539481.index
 1416724925.index
+3493154497.index
 405047692.index
 904519843.index
 881215320.index
@@ -74,6 +79,7 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 1416535326.index
 2777558549.index
 4004329358.index
+1118139248.index
 3704923105.index
 3779011954.index
 3070359726.index
@@ -89,6 +95,10 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 2022162805.index
 1271342938.index
 3024301651.index
+1575744503.index
+3394662527.index
 1743656347.index
 1587812838.index
+2314377266.index
+977253968.index
 2502446416.index

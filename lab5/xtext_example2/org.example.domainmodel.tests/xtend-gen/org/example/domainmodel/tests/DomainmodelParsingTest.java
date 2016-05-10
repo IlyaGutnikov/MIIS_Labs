@@ -4,12 +4,18 @@
 package org.example.domainmodel.tests;
 
 import com.google.inject.Inject;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.junit4.InjectWith;
 import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.xbase.lib.Exceptions;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.example.domainmodel.domainmodel.AbstractElement;
 import org.example.domainmodel.domainmodel.Domainmodel;
+import org.example.domainmodel.domainmodel.Entity;
+import org.example.domainmodel.domainmodel.Feature;
+import org.example.domainmodel.domainmodel.Type;
 import org.example.domainmodel.tests.DomainmodelInjectorProvider;
 import org.junit.Assert;
 import org.junit.Test;
@@ -30,6 +36,23 @@ public class DomainmodelParsingTest {
       _builder.newLine();
       final Domainmodel result = this.parseHelper.parse(_builder);
       Assert.assertNotNull(result);
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
+  
+  @Test
+  public void parseDomainmodel() {
+    try {
+      final Domainmodel model = this.parseHelper.parse(
+        "entity MyEntity {\n                parent: MyEntity\n            }");
+      EList<AbstractElement> _elements = model.getElements();
+      AbstractElement _head = IterableExtensions.<AbstractElement>head(_elements);
+      final Entity entity = ((Entity) _head);
+      EList<Feature> _features = entity.getFeatures();
+      Feature _head_1 = IterableExtensions.<Feature>head(_features);
+      Type _type = _head_1.getType();
+      Assert.assertSame(entity, _type);
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }

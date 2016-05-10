@@ -187,7 +187,7 @@ public abstract class AbstractDomainmodelRuntimeModule extends DefaultRuntimeMod
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.generator.GeneratorFragment2
-	public Class<? extends IGenerator2> bindIGenerator2() {
+	public Class<DomainmodelGenerator> bindIGenerator2() {
 		return DomainmodelGenerator.class;
 	}
 	

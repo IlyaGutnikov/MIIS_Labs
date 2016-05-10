@@ -3,6 +3,10 @@
  */
 package org.example.domainmodel.validation
 
+import org.eclipse.xtext.validation.Check
+import org.example.domainmodel.domainmodel.Entity
+import org.example.domainmodel.domainmodel.DomainmodelPackage
+import org.example.domainmodel.domainmodel.Feature
 
 /**
  * This class contains custom validation rules. 
@@ -11,15 +15,26 @@ package org.example.domainmodel.validation
  */
 class DomainmodelValidator extends AbstractDomainmodelValidator {
 	
-//  public static val INVALID_NAME = 'invalidName'
-//
-//	@Check
-//	def checkGreetingStartsWithCapital(Greeting greeting) {
-//		if (!Character.isUpperCase(greeting.name.charAt(0))) {
-//			warning('Name should start with a capital', 
-//					DomainmodelPackage.Literals.GREETING__NAME,
-//					INVALID_NAME)
-//		}
-//	}
+@Check
+def void checkNameStartsWithCapital(Entity entity) {
+    if (!Character.isUpperCase(entity.name.charAt(0))) {
+        warning("Name should start with a capital", 
+            DomainmodelPackage.Literals.TYPE__NAME)
+    }
+}
+	@Check
+def void checkFeatureNameIsUnique(Feature f) {
+    var superEntity = (f.eContainer as Entity).superType
+    while (superEntity != null) {
+        for (other : superEntity.features) {
+            if (f.name == other.name) {
+                error("Feature names have to be unique",
+                    DomainmodelPackage.Literals.FEATURE__NAME)
+                return
+            }
+        }
+        superEntity = superEntity.getSuperType();
+    }
+}
 	
 }
