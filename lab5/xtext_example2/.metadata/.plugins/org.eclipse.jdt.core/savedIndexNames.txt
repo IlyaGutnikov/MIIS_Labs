@@ -3,10 +3,8 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 3948695164.index
 3784372545.index
 179881252.index
-1825362511.index
 443871635.index
 3456844723.index
-3839748577.index
 1820186910.index
 2288403918.index
 900364629.index
@@ -76,7 +74,6 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 1416535326.index
 2777558549.index
 4004329358.index
-1118139248.index
 3704923105.index
 3779011954.index
 3070359726.index
@@ -94,5 +91,4 @@ INDEX VERSION 1.127+/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example2/.metad
 3024301651.index
 1743656347.index
 1587812838.index
-977253968.index
 2502446416.index

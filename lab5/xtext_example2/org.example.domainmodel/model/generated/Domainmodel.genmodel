@@ -9,6 +9,14 @@
     <genClasses ecoreClass="Domainmodel.ecore#//Domainmodel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Domainmodel.ecore#//Domainmodel/elements"/>
     </genClasses>
+    <genClasses ecoreClass="Domainmodel.ecore#//PackageDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Domainmodel.ecore#//PackageDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Domainmodel.ecore#//PackageDeclaration/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="Domainmodel.ecore#//AbstractElement"/>
+    <genClasses ecoreClass="Domainmodel.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Domainmodel.ecore#//Import/importedNamespace"/>
+    </genClasses>
     <genClasses ecoreClass="Domainmodel.ecore#//Type">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Domainmodel.ecore#//Type/name"/>
     </genClasses>
