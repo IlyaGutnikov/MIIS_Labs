@@ -9,6 +9,7 @@ import com.google.inject.name.Names;
 import java.util.Properties;
 import org.eclipse.xtext.Constants;
 import org.eclipse.xtext.IGrammarAccess;
+import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.generator.IGenerator2;
 import org.eclipse.xtext.naming.DefaultDeclarativeQualifiedNameProvider;
 import org.eclipse.xtext.naming.IQualifiedNameProvider;
@@ -187,7 +188,7 @@ public abstract class AbstractDomainmodelRuntimeModule extends DefaultRuntimeMod
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.generator.GeneratorFragment2
-	public Class<DomainmodelGenerator> bindIGenerator2() {
+	public Class<? extends IGenerator> bindIGenerator() {
 		return DomainmodelGenerator.class;
 	}
 	

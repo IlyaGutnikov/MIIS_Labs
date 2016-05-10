@@ -24,9 +24,7 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface Entity extends Type
 {
-  String name = null;
-
-/**
+  /**
    * Returns the value of the '<em><b>Super Type</b></em>' reference.
    * <!-- begin-user-doc -->
    * <p>
