@@ -1,0 +1,8 @@
+{
+	"1.0": {
+		"project_path": ":org.xtext.example.mydsl.tests",
+		"project_dir": "/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example/org.xtext.example.mydsl.parent/org.xtext.example.mydsl.tests",
+		"connection_project_dir": "/Users/ilyagutnikov/Git/MIIS_Labs/lab5/xtext_example/org.xtext.example.mydsl.parent",
+		"connection_gradle_distribution": "GRADLE_DISTRIBUTION(WRAPPER)"
+	}
+}
