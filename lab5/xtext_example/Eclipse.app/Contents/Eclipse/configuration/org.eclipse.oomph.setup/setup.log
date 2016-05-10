@@ -1,0 +1,13 @@
+[2016-05-10 10:57:33] Executing startup tasks
+[2016-05-10 10:57:33] Java(TM) SE Runtime Environment 1.8.0_92-b14
+[2016-05-10 10:57:33] Product self.product.version
+[2016-05-10 10:57:33] Bundle org.eclipse.oomph.setup 1.4.0.v20160428-0807, build=2375, branch=897bc855cb15c9157265d77d77502211842088b5
+[2016-05-10 10:57:33] Bundle org.eclipse.oomph.setup.core 1.4.0.v20160502-0916, build=2375, branch=897bc855cb15c9157265d77d77502211842088b5
+[2016-05-10 10:57:33] Bundle org.eclipse.oomph.setup.p2 1.4.0.v20160426-0423, build=2375, branch=897bc855cb15c9157265d77d77502211842088b5
+[2016-05-10 10:57:33] Performing Preference /instance/com.google.gwt.eclipse.core/sdkSetXml = PHNka3MgZGVmYXVsdFNkaz0iR1dUIj4KCTxzZGsgbmFtZT0iR1dUIiBsb2NhdGlvbj0iL1VzZXJzL2lseWFndXRuaWtvdi8ucDIvcG9vbC9wbHVnaW5zL2NvbS5nb29nbGUuZ3d0LmVjbGlwc2Uuc2RrYnVuZGxlXzIuNi4wL2d3dC0yLjYuMC8iIHZlcnNpb249IjIuNi4wIi8+Cgk8c2RrIG5hbWU9Imd3dC0yLjcuMCIgbG9jYXRpb249Ii9Vc2Vycy9pbHlhZ3V0bmlrb3YvcnUtYWdlbnRsYWItbmxwLWRpY3Qtc2V0dXAtbWFzdGVyL2d3dC0yLjcuMCIgdmVyc2lvbj0iMi43LjAiLz4KPC9zZGtzPgo=
+[2016-05-10 10:57:33] Performing Preference /instance/org.eclipse.ui.browser/browsers = <?xml version="1.0" encoding="UTF-8"?>...
+[2016-05-10 10:57:33] <?xml version="1.0" encoding="UTF-8"?>
+<web-browsers current="0">
+<system/>
+</web-browsers>
+[2016-05-10 10:57:33] 

@@ -1,0 +1,2 @@
+GRADLE_FILTERS=1.0-projectRelativePath-matches-false-false-org.xtext.example.mydsl,1.0-projectRelativePath-matches-false-false-org.xtext.example.mydsl.ide,1.0-projectRelativePath-matches-false-false-org.xtext.example.mydsl.idea,1.0-projectRelativePath-matches-false-false-org.xtext.example.mydsl.tests,1.0-projectRelativePath-matches-false-false-org.xtext.example.mydsl.web,1.0-projectRelativePath-matches-false-false-build
+eclipse.preferences.version=1
